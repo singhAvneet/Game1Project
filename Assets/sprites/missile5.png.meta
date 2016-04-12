@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: e2775e7a5c837864da5bc9b2ea45ffbf
+timeCreated: 1454171744
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: missile5_0
+    21300002: missile5_1
+    21300004: missile5_2
+    21300006: missile5_3
+    21300008: missile5_4
+    21300010: missile5_5
+    21300012: missile5_6
+    21300014: missile5_7
+    21300016: missile5_8
+    21300018: missile5_9
+    21300020: missile5_10
+    21300022: missile5_11
+    21300024: missile5_12
+    21300026: missile5_13
+    21300028: missile5_14
+    21300030: missile5_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: missile5_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 102
+        width: 43
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: missile5_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 95
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: missile5_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 91
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: missile5_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 95
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: missile5_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 100
+        width: 43
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: missile5_5
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 95
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: missile5_6
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 91
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: missile5_7
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 95
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: missile5_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 19
+        width: 52
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: missile5_9
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 8
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 16}
+        - {x: -19, y: -4}
+        - {x: -19, y: -16}
+        - {x: 0, y: -16}
+        - {x: 19, y: 8}
+        - {x: 19, y: 16}
+    - name: missile5_10
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 2
+        width: 15
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: missile5_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 8
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 16}
+        - {x: -18.5, y: 16}
+        - {x: -18.5, y: 7}
+        - {x: 0.5, y: -16}
+        - {x: 18.5, y: -16}
+        - {x: 18.5, y: -6}
+        - {x: 14.5, y: 0}
+    - name: missile5_12
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 19
+        width: 52
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: missile5_13
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 11
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 16}
+        - {x: -19, y: -5}
+        - {x: -19, y: -16}
+        - {x: -5, y: -16}
+        - {x: 19, y: -4}
+        - {x: 19, y: 16}
+    - name: missile5_14
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 6
+        width: 15
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: missile5_15
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 11
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 16}
+        - {x: -18.5, y: -6}
+        - {x: 8.5, y: -16}
+        - {x: 18.5, y: -16}
+        - {x: 18.5, y: -6}
+        - {x: 1.5, y: 16}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
