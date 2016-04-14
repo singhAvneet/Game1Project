@@ -13,10 +13,11 @@ public class PlayerCollider : MonoBehaviour {
 	private int score,count=1;
 	private Transform _transform;
 	private int missiles = 3;
-	private bool isEmpty = false;
+	//private bool isEmpty = false;
 	private AudioSource[] audioSources;
 	private AudioSource coins;
 	private AudioSource blast;
+	private WarCryGameController _WarCryGameController;
 
 
 	// Use this for initialization
@@ -39,6 +40,13 @@ public class PlayerCollider : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 
+
+		if (other.tag == "coins") {
+			Destroy (other.gameObject);
+			this._WarCryGameController.ScoreValue += 100;
+		}
+		if (other.tag == "") {
+		}
 		//tracks the score
 		if (other.tag == "playerBullet")
 			return;
@@ -46,7 +54,8 @@ public class PlayerCollider : MonoBehaviour {
 			this.coins.Play ();
 			count++;
 			score = score + 100;
-			this.gameController.ScoreValue += 100;
+			//this.gameController.ScoreValue += 100;
+			this._WarCryGameController.ScoreValue += 100;
 			Destroy (other.gameObject);
 			if (count % 3 == 0) {
 				this._initialize ();
@@ -55,27 +64,29 @@ public class PlayerCollider : MonoBehaviour {
 		}
 
 		//tracks number of lives
-		if (this.gameController.LivesValue < 1) {
+		if (this._WarCryGameController.LivesValue < 1) {
 			Instantiate (playerExplosion, other.transform.position, other.transform.rotation);
 			Destroy (other.gameObject);
-			Destroy (this.gameObject);
+			//Destroy (this.gameObject);
 			this.blast.Play ();
 		} else {
 			//Destroy (this.gameObject);
 			this.gameObject.transform.position=new Vector2(transform.position.x,0);
 			//nstantiate (playerObj.gameObject, other.transform.position, other.transform.rotation);
 			this.blast.Play ();	
-			this.gameController.LivesValue -= 1;
+			//this.gameController.LivesValue -= 1;
+			this._WarCryGameController.LivesValue -= 1;
 		}
 			
 
 	}
 
 	private void _initialize(){
-		isEmpty = false;
+		//isEmpty = false;
 		//Destroy (missileObj.gameObject);
 		for (int missileCount=0;missileCount<missiles;missileCount++) {
 			Instantiate (missileObj.gameObject);		
 		}
+		this._WarCryGameController = GameObject.Find ("WarCryGameContoller").GetComponent<WarCryGameController> ();
 }
 }

@@ -24,7 +24,7 @@ public class Missile : MonoBehaviour {
 		this._currentPosition.y = this._verticalPosition;
 		this._currentPosition -= new Vector2(this._horizontalDrift,0f);
 		this._transform.position = this._currentPosition;
-		if (this._currentPosition.x < -1200) {
+		if (this._currentPosition.x < -335) {
 			this.Reset ();
 		}
 	}
@@ -32,7 +32,7 @@ public class Missile : MonoBehaviour {
 	public void Reset() {
 		this._verticalPosition = Random.Range (-230f,230f);
 		this._horizontalDrift = 10f;
-		this._transform.position = new Vector2 (-500, 0);
+		this._transform.position = new Vector2 (335, 0);
 
 	}
 

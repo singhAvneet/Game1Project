@@ -13,8 +13,8 @@ public class GameController : MonoBehaviour{
 
 	//public instance variable
 	public Missile missileObj;
-	public Text score;
-	public Text lives;
+	//public Text score;
+	//public Text lives;
 	public Text winnerLoser;
 	public Text highScore;
 	public GameObject player;
@@ -36,38 +36,38 @@ public class GameController : MonoBehaviour{
 	
 	// Update is called once per frame
 	void Update () {
-		this.score.text = "Score: " + this._scoreValue;
-		this.lives.text = "Lives: " + this._livesValue;
+		//this.score.text = "Score: " + this._scoreValue;
+		//this.lives.text = "Lives: " + this._livesValue;
 		//if (this.groundEnemy == null ) 
 		//	if(this.airEnemy == null)
-		if (this.groundEnemy == null)
-		if (this.airEnemy == null)
-		if (this.missileEnemy == null) {
-			this.winnerLoser.text = " You Win !";
-			this.highScore.text = "High Score: " + this._scoreValue;
-			SceneManager.LoadScene("scene/GameOver");
-			//Application.loadedLevel("GameOver");
-
-
-		}
-		
+//		if (this.groundEnemy == null)
+//		if (this.airEnemy == null)
+//		if (this.missileEnemy == null) {
+//			this.winnerLoser.text = " You Win !";
+//			this.highScore.text = "High Score: " + this._scoreValue;
+//			SceneManager.LoadScene("scene/GameOver");
+//			//Application.loadedLevel("GameOver");
+//
+//
+//		}
+//		
 			//this.method1 ();
 
-		if (this.player == null) {
-
-			this.winnerLoser.text =str;
-			this.highScore.text = "High Score: " + this._scoreValue;
-			Destroy (this.airEnemy.gameObject);
-			Destroy (this.groundEnemy.gameObject);
-			Destroy (this.missileEnemy.gameObject);
-			this.RESTART.enabled = true;
-		}
+//		if (this.player == null) {
+//
+//			this.winnerLoser.text =str;
+//			this.highScore.text = "High Score: " + this._scoreValue;
+//			Destroy (this.airEnemy.gameObject);
+//			Destroy (this.groundEnemy.gameObject);
+//			Destroy (this.missileEnemy.gameObject);
+//			this.RESTART.enabled = true;
+//		}
 	}
 
 	private void _initialize(){
-		this.ScoreValue = 0;
-		this.LivesValue = 3;
-		this.RESTART.enabled = false;
+		//this.ScoreValue = 0;
+		//this.LivesValue = 3;
+		//this.RESTART.enabled = false;
 		//Destroy (missileObj.gameObject);
 		/*for (int missileCount=0;missileCount<missiles;missileCount++) {
 			Instantiate (missileObj.gameObject);	*/	

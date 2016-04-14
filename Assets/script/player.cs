@@ -39,9 +39,10 @@ public class player : MonoBehaviour {
 		this.checkPosiiton ();
 		this._transform.position = this._currentPosition;
 
+	}
 
-
-
+	void Awake(){
+		DontDestroyOnLoad (transform.gameObject);
 	}
 
 	public void checkPosiiton() {
@@ -50,12 +51,14 @@ public class player : MonoBehaviour {
 		if (this._currentPosition.y > 200)
 			this._currentPosition.y = 200;
 		
-		if (this._currentPosition.x > -725)
-			this._currentPosition.x = -725;
-		if (this._currentPosition.x < -1125)
-			this._currentPosition.x = -1125;
+		if (this._currentPosition.x > -80)
+			this._currentPosition.x = -80f;
+		if (this._currentPosition.x < -240)
+			this._currentPosition.x = -240f;
 		
 	}
+
+
 
 
 
