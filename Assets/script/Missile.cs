@@ -43,7 +43,7 @@ public class Missile : MonoBehaviour
 	{
 		this._verticalPosition = Random.Range (-230f, 230f);
 		this._horizontalDrift = 10f;
-		this._transform.position = new Vector2 (335, 0);
+		//this._transform.position = new Vector2 (335, 0);
 
 	}
 

@@ -38,6 +38,9 @@ public class playerBullets : MonoBehaviour {
 		if (other.gameObject.CompareTag ("EnemyBullet")) {
 			Destroy (this.gameObject);
 		}
+		if (other.gameObject.CompareTag ("EnemyBoss")) {
+			Destroy (this.gameObject);
+		}
 	}
 
 	//PUBLIC METHODS
