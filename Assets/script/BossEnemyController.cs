@@ -11,21 +11,24 @@ public class BossEnemyController : MonoBehaviour {
 	private Transform _transform;
 	private Transform _enemyBulletTransform;
 	private Vector2 _currentPosition;
-	//private int _liveScore;
 	private int _bulletPositionY;
+	private bool _moveUp;
+	private Level3Controller _level3Controller;
 
 	// Use this for initialization
 	void Start () {
 
 		this._transform = gameObject.GetComponent<Transform> ();
 		this._enemyBulletTransform = this.enemyBullet.gameObject.GetComponent<Transform> ();
-		//this._liveScore = 10;
+		this._level3Controller = GameObject.Find ("Level3Controller").GetComponent<Level3Controller> ();
 		this._bulletPositionY = 28;
+		this._moveUp = true;
 		this._Reset ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		
 		this._currentPosition = this._transform.position;
 
 		if (this._currentPosition.x == 205) {
@@ -38,11 +41,27 @@ public class BossEnemyController : MonoBehaviour {
 			this._transform.position = this._currentPosition;
 		}
 
-		if (this._currentPosition.x <= 200) {
+		if (this._currentPosition.x == 200) {
 			// Move on Y axis
 			//this._currentPosition -= new Vector2 (0.0f, 2.0f);
+			if (this._moveUp) {
+				this._currentPosition += new Vector2 (0.0f, 2f);
+				this._transform.position = this._currentPosition;
+			} else {
+				this._currentPosition -= new Vector2 (0.0f, 2f);
+				this._transform.position = this._currentPosition;
+			}
+			this._CheckVerticalBoundary ();
+
 		}
 
+	}
+
+	void OnTriggerEnter2D (Collider2D other){
+
+		if (other.gameObject.CompareTag ("playerBullets")) {
+			this._level3Controller.BossLifeLine--;
+		}
 	}
 
 	IEnumerator EnemyBulletWaves(){
@@ -61,6 +80,16 @@ public class BossEnemyController : MonoBehaviour {
 	//PIVATE METHODS
 	private void _Reset(){
 		this._transform.position = new Vector2 (440f, 0f);
+	}
+
+	private void _CheckVerticalBoundary(){
+
+		if (this._currentPosition.y >= 172) {
+			this._moveUp = false;
+		}
+		if (this._currentPosition.y <= -172) {
+			this._moveUp = true;
+		}
 	}
 		
 }

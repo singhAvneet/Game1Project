@@ -40,7 +40,7 @@ public class background : MonoBehaviour {
 		}
 
 		// The Background reset count
-		if(this._bkgResetCount >10){
+		if(this._bkgResetCount >2){
 			//LOAD NEXT SCENE
 			this._LoadNextScene();
 		}
