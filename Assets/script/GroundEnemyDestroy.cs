@@ -17,13 +17,14 @@ public class GroundEnemyDestroy : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter2D(Collider2D other){
-		if(other.tag == "playerBullet"&& this.lives<0){
+		//if(other.tag == "playerBullet"&& this.lives<0){
+		if(other.tag == "playerBullet"){
 			Instantiate (blast, other.transform.position, other.transform.rotation);
 			//Destroy (other.gameObject);
-			Destroy (this.gameObject);
+			//Destroy (this.gameObject);
 			//this.explosion.Play();
 		}
-		this.lives -= 1;
+		//this.lives -= 1;
 
 	}
 }

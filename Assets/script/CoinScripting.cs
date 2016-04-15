@@ -24,7 +24,13 @@ public class CoinScripting : MonoBehaviour {
 		this._currentPosition.y = this._verticalPosition;
 		this._currentPosition -= new Vector2(this._horizontalDrift,0f);
 		this._transform.position = this._currentPosition;
-		if (this._currentPosition.x < -1200) {
+		if (this._currentPosition.x < -340) {
+			this.Reset ();
+		}
+	}
+
+	void OnTriggerEnter2D (Collider2D other){
+		if(other.gameObject.CompareTag("Player")){
 			this.Reset ();
 		}
 	}
@@ -32,7 +38,9 @@ public class CoinScripting : MonoBehaviour {
 	public void Reset() {
 		this._verticalPosition = Random.Range (-230f,230f);
 		this._horizontalDrift = 5f;
-		this._transform.position = new Vector2 (-500, 0);
+		this._transform.position = new Vector2 (340, 0);
 
 	}
+
+
 }

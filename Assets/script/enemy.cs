@@ -21,18 +21,15 @@ public class enemy : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
 
-		if (this._currentPosition.x >= -800) {
+		this._currentPosition = this._transform.position;
+
+		if (this._currentPosition.x > 80) {
 			//this.Reset ();
 			this._currentPosition = this._transform.position;
 			this._currentPosition -= new Vector2(this.speed,0);
 			this._transform.position = this._currentPosition;
 		}
-	
-
-
-
 
 	}
 
