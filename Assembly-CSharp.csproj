@@ -46,12 +46,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\script\BackgroundMover.cs" />
+     <Compile Include="Assets\script\BossEnemyBullet.cs" />
      <Compile Include="Assets\script\BossEnemyController.cs" />
      <Compile Include="Assets\script\CoinScripting.cs" />
      <Compile Include="Assets\script\DestroyPlayer.cs" />
      <Compile Include="Assets\script\GameController.cs" />
      <Compile Include="Assets\script\GroundEnemyDestroy.cs" />
      <Compile Include="Assets\script\Groundfire.cs" />
+     <Compile Include="Assets\script\Level1Controller.cs" />
      <Compile Include="Assets\script\Level3Controller.cs" />
      <Compile Include="Assets\script\MenuSceneController.cs" />
      <Compile Include="Assets\script\Missile.cs" />

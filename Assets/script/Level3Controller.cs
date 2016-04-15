@@ -7,7 +7,7 @@ public class Level3Controller : MonoBehaviour {
 	private WarCryGameController _warCryGameController;
 
 	//PUBLIC VARIABLES
-	public Missile miniEnemys;
+	public GameObject miniEnemys;
 	public BossEnemyController bossEnemy;
 
 	// Use this for initialization
@@ -22,7 +22,7 @@ public class Level3Controller : MonoBehaviour {
 			this._warCryGameController.BkgRestCount += 1;
 			//Instantiate Boss Enemy
 			Instantiate(this.bossEnemy.gameObject);
-			Destroy (miniEnemys.gameObject);
+			//this.miniEnemys.gameObject.SetActive (false);
 		}
 
 		//Check for booEnemyLife and instantiate miniEnemy
@@ -35,8 +35,8 @@ public class Level3Controller : MonoBehaviour {
 		
 		this._warCryGameController = GameObject.Find ("WarCryGameContoller").GetComponent<WarCryGameController> ();
 
-		for (int i = 0; i < 4; i++) {
-			Instantiate (this.miniEnemys.gameObject);
+		for (int i = 0; i < 2; i++) {
+			Instantiate (this.miniEnemys);
 		}
 	}
 		

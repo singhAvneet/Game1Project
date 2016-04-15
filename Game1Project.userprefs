@@ -1,18 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\PlayerCollider.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\player.cs">
     <Files>
-      <File FileName="Assets\script\Level3Controller.cs" Line="28" Column="34" />
-      <File FileName="Assets\script\BossEnemyController.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Missile.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\BackgroundMover.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\WarCryGameController.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\PlayerCollider.cs" Line="89" Column="4" />
-      <File FileName="Assets\script\background.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\enemy.cs" Line="34" Column="3" />
-      <File FileName="Assets\script\player.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\GameController.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\playerBullets.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\PlayerCollider.cs" Line="39" Column="48" />
+      <File FileName="Assets\script\player.cs" Line="29" Column="59" />
+      <File FileName="Assets\script\playerBullets.cs" Line="50" Column="37" />
+      <File FileName="Assets\script\Missile.cs" Line="46" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

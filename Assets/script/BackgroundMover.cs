@@ -38,7 +38,7 @@ public class BackgroundMover : MonoBehaviour {
 		if(this._backgroundPosition.x <= -resetPosition){
 			this.Reset();
 		}
-		//-476
+
 		// The Background reset count
 		if(this._warCryGameController.BkgRestCount > 30){
 			//LOAD NEXT SCENE

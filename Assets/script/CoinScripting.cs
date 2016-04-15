@@ -29,10 +29,18 @@ public class CoinScripting : MonoBehaviour {
 		}
 	}
 
+	void OnTriggerEnter2D (Collider2D other){
+		if(other.gameObject.CompareTag("Player")){
+			this.Reset ();
+		}
+	}
+
 	public void Reset() {
 		this._verticalPosition = Random.Range (-230f,230f);
 		this._horizontalDrift = 5f;
 		this._transform.position = new Vector2 (340, 0);
 
 	}
+
+
 }
