@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BossEnemyBullet : MonoBehaviour {
+public class EnemyMiniController : MonoBehaviour {
 
 	//PUBLIC VARIABLES
 	public float speed;
+	public float xboundary;
+	public float yboundary;
 
 	//PRIVATE VARIABLES
 	private Transform _transform;
@@ -12,9 +14,8 @@ public class BossEnemyBullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
 		this._transform = gameObject.GetComponent<Transform> ();
-		//this.Reset ();
+		this._Reset ();
 	}
 	
 	// Update is called once per frame
@@ -24,17 +25,26 @@ public class BossEnemyBullet : MonoBehaviour {
 		this._currentPosition -= new Vector2 (this.speed, 0.0f);
 		this._transform.position = this._currentPosition;
 
-		if (this._currentPosition.x <= -327) {
-			Destroy (this.gameObject);
+		if (this._currentPosition.x <= -xboundary) {
+			this._Reset ();
+		}
+	}
+
+	void OnTriggerEnter2D (Collider2D other)
+	{
+		if (other.gameObject.CompareTag ("Player")) {
+			this._Reset ();
 		}
 
-	}
-		
-	void OnTriggerEnter2D (Collider2D other){
-		
 		if (other.gameObject.CompareTag ("playerBullets")) {
-			Destroy (this.gameObject);
+			this._Reset ();
 		}
 	}
 
+
+	//PRIVATE METHODS
+	private void _Reset(){
+
+		this.transform.position = new Vector2 (xboundary, Random.Range (-yboundary, yboundary));
+	}
 }

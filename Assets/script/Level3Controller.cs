@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Level3Controller : MonoBehaviour {
 
 	//PRIVATE VARIABLES
 	private WarCryGameController _warCryGameController;
+	private player _playerController;
 	private int _bossLifeLine;
 
 	//PUBLIC VARIABLES
@@ -22,6 +24,9 @@ public class Level3Controller : MonoBehaviour {
 		set{ 
 			this._bossLifeLine = value;
 			this.bossLifeLabel.text = "Boss Life: " + this._bossLifeLine;
+			if (this._bossLifeLine <= 0) {
+				this._EndGame ();
+			}
 		}
 	}
 
@@ -52,10 +57,16 @@ public class Level3Controller : MonoBehaviour {
 		this.bossLifeLabel.gameObject.SetActive (false);
 		this._bossLifeLine = 4;
 		this._warCryGameController = GameObject.Find ("WarCryGameContoller").GetComponent<WarCryGameController> ();
-
+		this._playerController = GameObject.Find ("player").GetComponent<player> ();
 		for (int i = 0; i < 2; i++) {
 			Instantiate (this.miniEnemys);
 		}
 	}
-		
+
+	private void _EndGame(){
+
+		Destroy (this._playerController.gameObject);
+		this._warCryGameController.gameOverLabel.text = "MISSION COMPLETED";
+		this._warCryGameController._EndGame ();
+	}
 }

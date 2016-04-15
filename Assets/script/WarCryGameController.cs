@@ -112,6 +112,7 @@ public class WarCryGameController : MonoBehaviour
 		this.menuPanel.gameObject.SetActive(false);
 		this.scorePanel.gameObject.SetActive(true);
 		this.gameOverPanel.SetActive (false);
+		this._initialize ();
 		SceneManager.LoadScene ("main");
 	}
 
@@ -126,10 +127,11 @@ public class WarCryGameController : MonoBehaviour
 	{
 		this.ScoreValue = 0;
 		this.LivesValue = 10;
+		this.gameOverLabel.text = "GAME OVER";
 	}
 
 	//END GAME
-	private void _EndGame(){
+	public void _EndGame(){
 		this.gameOverPanel.gameObject.SetActive(true);
 		this.scorePanel.gameObject.SetActive (false);
 		this.highScoreLabel.text = this._scoreValue.ToString();
