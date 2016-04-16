@@ -48,6 +48,7 @@
      <Compile Include="Assets\script\BackgroundMover.cs" />
      <Compile Include="Assets\script\BossEnemyBullet.cs" />
      <Compile Include="Assets\script\BossEnemyController.cs" />
+     <Compile Include="Assets\script\CameraFollow.cs" />
      <Compile Include="Assets\script\CoinScripting.cs" />
      <Compile Include="Assets\script\DestroyPlayer.cs" />
      <Compile Include="Assets\script\GameController.cs" />

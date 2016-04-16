@@ -7,6 +7,7 @@ public class player : MonoBehaviour {
 	public float speed ;
 	public float fireRate;
 	public GameObject playerBullet;
+	public int xmin, xmax, ymin, umax;
 
 	//PRIVATE INSTANCE VARIABLES
 	private Transform _transform;
@@ -56,15 +57,15 @@ public class player : MonoBehaviour {
 	}
 
 	public void checkPosiiton() {
-		if (this._currentPosition.y < -200)
-			this._currentPosition.y = -200;
-		if (this._currentPosition.y > 200)
-			this._currentPosition.y = 200;
+		if (this._currentPosition.y < this.ymin)
+			this._currentPosition.y = this.ymin;
+		if (this._currentPosition.y > this.umax)
+			this._currentPosition.y =this.umax;
 		
-		if (this._currentPosition.x > -80)
-			this._currentPosition.x = -80f;
-		if (this._currentPosition.x < -240)
-			this._currentPosition.x = -240f;
+		if (this._currentPosition.x > this.xmax)
+			this._currentPosition.x = this.xmax;
+		if (this._currentPosition.x < this.xmin)
+			this._currentPosition.x = this.xmin;
 		
 	}
 
