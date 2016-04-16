@@ -1,9 +1,21 @@
 fileFormatVersion: 2
 guid: cb4a71002c2933240bb67eddcbf958d0
-timeCreated: 1460744591
+timeCreated: 1460831655
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: volcano_0
+    21300002: volcano_1
+    21300004: volcano_2
+    21300006: volcano_3
+    21300008: volcano_4
+    21300010: volcano_5
+    21300012: volcano_6
+    21300014: volcano_7
+    21300016: volcano_8
+    21300018: volcano_9
+    21300020: volcano_10
+    21300022: volcano_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,10 +39,10 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +50,198 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: volcano_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 103
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: volcano_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -16, y: 11}
+        - {x: -16, y: -12}
+        - {x: -11, y: -16}
+        - {x: 15, y: -16}
+        - {x: 16, y: -13}
+        - {x: 16, y: 16}
+    - name: volcano_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 103
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: volcano_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -16, y: 11}
+        - {x: -16, y: -12}
+        - {x: -11, y: -16}
+        - {x: 15, y: -16}
+        - {x: 16, y: -13}
+        - {x: 16, y: 16}
+    - name: volcano_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 103
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: volcano_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -16, y: 11}
+        - {x: -16, y: -12}
+        - {x: -11, y: -16}
+        - {x: 15, y: -16}
+        - {x: 16, y: -13}
+        - {x: 16, y: 16}
+    - name: volcano_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 103
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: volcano_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -16, y: 11}
+        - {x: -16, y: -12}
+        - {x: -11, y: -16}
+        - {x: 15, y: -16}
+        - {x: 16, y: -13}
+        - {x: 16, y: 16}
+    - name: volcano_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 46}
+        - {x: -44, y: 36}
+        - {x: -44, y: -46}
+        - {x: 44, y: -46}
+        - {x: 44, y: 46}
+    - name: volcano_9
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 4
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 46}
+        - {x: -44, y: 36}
+        - {x: -44, y: -46}
+        - {x: 44, y: -46}
+        - {x: 44, y: 46}
+    - name: volcano_10
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 4
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 46}
+        - {x: -44, y: 36}
+        - {x: -44, y: -46}
+        - {x: 44, y: -46}
+        - {x: 44, y: 46}
+    - name: volcano_11
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 4
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 46}
+        - {x: -44, y: 36}
+        - {x: -44, y: -46}
+        - {x: 44, y: -46}
+        - {x: 44, y: 46}
     outline: []
   spritePackingTag: 
   userData: 

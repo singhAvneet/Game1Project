@@ -36,7 +36,7 @@ public class player : MonoBehaviour {
 		this._currentPosition = this._transform.position;
 		this.inputx = Input.GetAxis ("Vertical");
 		this.inputy = Input.GetAxis ("Horizontal");
-	
+
 
 		if (this.inputx > 0)
 			this._currentPosition += new Vector2 (0,this.speed);
@@ -70,7 +70,16 @@ public class player : MonoBehaviour {
 	}
 
 
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.tag == "downWall") {
+			this.transform.position = new Vector2 (this._transform.position.x,this._transform.position.y+20f);				
+		}
+		if (other.tag == "upWall") {
+			this.transform.position = new Vector2 (this._transform.position.x,this._transform.position.y-20f);				
+		}
+	
 
+	}
 
 
 }

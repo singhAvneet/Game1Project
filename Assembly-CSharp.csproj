@@ -54,11 +54,13 @@
      <Compile Include="Assets\script\GameController.cs" />
      <Compile Include="Assets\script\GroundEnemyDestroy.cs" />
      <Compile Include="Assets\script\Groundfire.cs" />
+     <Compile Include="Assets\script\Hinge.cs" />
      <Compile Include="Assets\script\Level1Controller.cs" />
      <Compile Include="Assets\script\Level3Controller.cs" />
      <Compile Include="Assets\script\MenuSceneController.cs" />
      <Compile Include="Assets\script\Missile.cs" />
      <Compile Include="Assets\script\PlayerCollider.cs" />
+     <Compile Include="Assets\script\Valcono.cs" />
      <Compile Include="Assets\script\WarCryGameController.cs" />
      <Compile Include="Assets\script\background.cs" />
      <Compile Include="Assets\script\bulletFiring.cs" />
