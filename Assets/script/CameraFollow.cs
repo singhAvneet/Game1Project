@@ -13,6 +13,7 @@ public class CameraFollow : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		target = GameObject.Find ("player").transform;
+	
 
 	}
 	

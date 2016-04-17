@@ -64,6 +64,7 @@
      <Compile Include="Assets\script\WarCryGameController.cs" />
      <Compile Include="Assets\script\background.cs" />
      <Compile Include="Assets\script\bulletFiring.cs" />
+     <Compile Include="Assets\script\dragon.cs" />
      <Compile Include="Assets\script\enemy.cs" />
      <Compile Include="Assets\script\player.cs" />
      <Compile Include="Assets\script\playerBullets.cs" />

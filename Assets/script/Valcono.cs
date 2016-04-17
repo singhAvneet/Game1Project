@@ -61,7 +61,7 @@ public class Valcono : MonoBehaviour {
 			//Destroy (other.gameObject);
 			this._gameController.LivesValue--;
 		}
-		Debug.Log ("hello");
+	
 		//	this._lives--;
 	
 }
