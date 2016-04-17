@@ -55,6 +55,6 @@ public class background : MonoBehaviour {
 	//PRIVATE METHODS BELOW
 
 	private void _LoadNextScene(){
-		SceneManager.LoadScene ("Level3");
+		SceneManager.LoadScene ("Level2");
 	}
 }

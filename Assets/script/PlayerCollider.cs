@@ -42,6 +42,17 @@ public class PlayerCollider : MonoBehaviour
 			Destroy (other.gameObject);
 			this.blast.Play ();
 		}
+		if (other.gameObject.CompareTag("Hing")) {
+			this._WarCryGameController.LivesValue--;
+		}
+		if (other.gameObject.CompareTag("downWall")) {
+			this.transform.position = new Vector2 (this._transform.position.x,this._transform.position.y+20f);
+			this._WarCryGameController.LivesValue--;
+		}
+		if (other.gameObject.CompareTag("upWall")){
+			this.transform.position = new Vector2 (this._transform.position.x,this._transform.position.y-20f);
+			this._WarCryGameController.LivesValue--;
+		}
 	}
 
 	private void _initialize ()

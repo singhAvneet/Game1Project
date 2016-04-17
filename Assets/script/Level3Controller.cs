@@ -7,12 +7,13 @@ public class Level3Controller : MonoBehaviour {
 
 	//PRIVATE VARIABLES
 	private WarCryGameController _warCryGameController;
-	private player _playerController;
+	//private player _playerController;
 	private int _bossLifeLine;
 
 	//PUBLIC VARIABLES
 	public GameObject miniEnemys;
 	public BossEnemyController bossEnemy;
+	public player _playerController;
 	public Text bossLifeLabel;
 
 
@@ -43,21 +44,22 @@ public class Level3Controller : MonoBehaviour {
 			//Instantiate Boss Enemy
 			Instantiate(this.bossEnemy.gameObject);
 			this.bossLifeLabel.gameObject.SetActive (true);
+			this.bossLifeLabel.text ="Boss Life: " + this._bossLifeLine;
 			//this.miniEnemys.gameObject.SetActive (false);
 		}
 
-		//Check for booEnemyLife and instant	iate miniEnemy
+		//Check for booEnemyLife and instantiate miniEnemy
 
 		
 	}
 
 	//PRIVATE METHODS
 	private void _initiallizeObjects(){
-
+		Instantiate (this._playerController.gameObject);
 		this.bossLifeLabel.gameObject.SetActive (false);
 		this._bossLifeLine = 4;
 		this._warCryGameController = GameObject.Find ("WarCryGameContoller").GetComponent<WarCryGameController> ();
-		this._playerController = GameObject.Find ("player").GetComponent<player> ();
+		//this._playerController = GameObject.Find ("player").GetComponent<player> ();
 		for (int i = 0; i < 2; i++) {
 			Instantiate (this.miniEnemys);
 		}
@@ -65,7 +67,7 @@ public class Level3Controller : MonoBehaviour {
 
 	private void _EndGame(){
 
-		Destroy (this._playerController.gameObject);
+		//Destroy (this._playerController.gameObject);
 		this._warCryGameController.gameOverLabel.text = "MISSION COMPLETED";
 		this._warCryGameController._EndGame ();
 	}
